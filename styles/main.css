@@ -1,0 +1,23 @@
+.width-wrap {
+  width: 100%;
+  margin: 0 auto; }
+
+.width-wrap {
+  width: 100%;
+  margin: 0 auto; }
+
+.block_wrap {
+  width: 100%;
+  background-color: #1ABC9C;
+  height: 50px; }
+  .block_wrap header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto; }
+  .block_wrap a {
+    color: white; }
+
+/*# sourceMappingURL=main.css.map */

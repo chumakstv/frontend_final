@@ -1,0 +1,29 @@
+@import '_variables.scss';
+@import '_colors.scss';
+@import '_mixins.scss';
+
+.block_wrap {
+	width: 100%;
+	background-color: $mountain_meadow;
+	height: 50px;
+
+	header {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		@include content_width;
+	}
+
+	a {
+		color: white;
+	}
+}
+
+.header_contact_info {
+
+}
+
+.header_login_menu {
+
+}
