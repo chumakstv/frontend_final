@@ -4,26 +4,50 @@
 
 .block_wrap {
 	width: 100%;
-	background-color: $mountain_meadow;
-	height: 50px;
+	background-color: $mountain_meadow;	
 
 	header {
 		display: flex;
-		flex-flow: row wrap;
 		align-items: center;
-		justify-content: space-between;
+		height: 50px;
 		@include content_width;
+
+		.header_contact_info {
+			flex: 2;
+			margin-left: auto;
+		}
+		.header_login_menu {
+		}
+
+		span {
+			@include span_icon;
+		}
 	}
 
 	a {
-		color: white;
+		@include link_style;
+		margin-right: 35px;
+		font-size: 14px;
+
+		&.login_menu {
+			margin-right: 25px;
+		}
+	}
+}
+@media (max-width: 749px) {
+	header {
+		flex-direction: column;
+		
+		.header_contact_info {
+			margin: auto;
+		}
 	}
 }
 
-.header_contact_info {
-
-}
-
-.header_login_menu {
-
+@media (max-width: 453px) {
+	.block_wrap {
+		a.login_menu {
+			margin-right: 10px;
+		}
+	}
 }

@@ -2,3 +2,14 @@
   max-width: 1150px;
   margin: 0 auto;
 }
+
+@mixin link_style {
+	color: white;
+	text-decoration: none;
+}
+
+@mixin span_icon {
+	color: white;
+	font-size: 17px;
+	vertical-align: middle;
+}
